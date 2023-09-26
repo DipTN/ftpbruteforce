@@ -5,6 +5,4 @@ This script will do FTP brute force attack
 
 $git clone https://github.com/DipTN/ftpbruteforce
 
-$cd FTPBruteForcer
-
 $python ftpbruteforcer.py -t TargetHost -u FTPuser -w WordlistPath
