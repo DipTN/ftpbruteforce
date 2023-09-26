@@ -1,12 +1,12 @@
 # FTPBruteForce 💥
 This script will do FTP brute force attack
 
-## 🦦 Download: 
+## 🦦 Download : 
 ```
 git clone https://github.com/DipTN/ftpbruteforce
 ```
 
-## 🐳 Usage:
+## 🐳 Usage :
 ```
 python ftpbruteforcer.py [-h] -t TARGETHOSTADDRESS -u USERNAME -w PASSWORD
 ```
@@ -15,7 +15,7 @@ python ftpbruteforcer.py [-h] -t TARGETHOSTADDRESS -u USERNAME -w PASSWORD
 - `-u USERNAME`, `--username USERNAME` : The username of the host
 - `-w PASSWORD`, `--worldlist PASSWORD` : The path of the wordlist
 
-## 🐤 Example:
+## 🐤 Example :
 ```
 python ftpbruteforcer.py -t 10.10.10.100 -u diptn -w wordlist.txt
 ```
