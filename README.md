@@ -19,6 +19,6 @@ python ftpbruteforcer.py [-h] -t TARGETHOSTADDRESS -u USERNAME -w PASSWORD
 
 ## 🐤 Example :
 ```
-python ftpbruteforcer.py -t 10.10.10.100 -u diptn -w wordlist.txt
+python ftpbruteforcer.py -t 10.10.10.100 -u winftp -w wordlist.txt
 ```
 ![image](https://github.com/DipTN/ftpbruteforce/assets/117794535/9f1e82a4-b662-4aa2-acc7-c22e5bc1cc84)
