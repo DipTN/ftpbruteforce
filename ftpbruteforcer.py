@@ -2,7 +2,7 @@ import ftplib
 import argparse
 from termcolor import colored
 
-#Coded by ZT
+#Coded by DipTN
 #Connection function with FTP
 def connect(host,user,password):
     try:
